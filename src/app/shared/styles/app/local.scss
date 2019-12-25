@@ -1,0 +1,289 @@
+//--------dark-mode
+
+* {
+  font-family: IRANSans;
+  direction: rtl;
+}
+[dir="ltr"] * {
+  font-family: tahoma;
+  direction: ltr;
+}
+
+.en-number {
+  font-family: Tahoma;
+  unicode-range: U+30-39;
+}
+
+.latin {
+  font-family: Tahoma;
+}
+.fa ,.fal, .far,.fas{
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 900;
+}
+.latin_and_child,
+.latin_and_child * {
+  font-family: Tahoma;
+}
+
+.flag-icon {
+  background-size: cover;
+}
+
+.ltr {
+  direction: ltr;
+}
+
+.rtl {
+  direction: rtl;
+}
+
+.border-gainsboro {
+  border-color: gainsboro;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.btn-info:hover {
+  background: #344d6c;
+  border-color: transparent;
+  color: #fff;
+}
+
+.btn-info:focus {
+  background: #1a3659;
+  border-color: transparent;
+  color: #fff;
+}
+
+$i: 0;
+@while $i <= 150 {
+  .mt#{$i} {
+    margin-top: #{$i}px !important;
+  }
+
+  .p#{$i} {
+    padding: #{$i}px !important;
+  }
+
+  .pt#{$i} {
+    padding-top: #{$i}px !important;
+  }
+
+  .pr#{$i} {
+    padding-right: #{$i}px !important;
+  }
+
+  .pl#{$i} {
+    padding-left: #{$i}px !important;
+  }
+
+  .pb#{$i} {
+    padding-left: #{$i}px !important;
+  }
+
+  $i: $i + 5;
+}
+
+$i: 0;
+@while $i <= 150 {
+  .round-#{$i} {
+    border-radius: #{$i}px !important;
+  }
+
+  $i: $i + 1;
+}
+
+$i: 5;
+@while $i <= 30 {
+  .fs-#{$i} {
+    font-size: #{$i}px;
+  }
+
+  $i: $i + 1;
+}
+
+.lh1 {
+  line-height: 1;
+}
+
+.lh1-5 {
+  line-height: 1.5;
+}
+
+.lh2 {
+  line-height: 2;
+}
+
+.lh3 {
+  line-height: 3;
+}
+
+.lh4 {
+  line-height: 4;
+}
+
+
+
+.focus-disable:focus {
+  outline: none;
+  box-shadow: none !important;
+}
+
+.bg-first-color {
+  background-color: $first-color;
+}
+
+.bg-fourth-color {
+  background-color: $fourth-color;
+  border-color: transparent;
+  color: #000;
+}
+
+.border-first-color {
+  border-color: $first-color;
+}
+
+.text-first-color {
+  color: $first-color;
+}
+
+.bg-second-color {
+  background-color: $second-color;
+}
+
+.text-second-color {
+  color: $second-color;
+}
+
+.border-second-color {
+  border-color: $second-color;
+}
+
+.text-orange {
+  color: orange;
+}
+
+.btn-first-color {
+  background-color: $first-color;
+  color: #fff;
+
+  &:hover,
+  &:active {
+    background-color: darken($first-color, 5);
+    color: #fff;
+  }
+}
+
+.btn-second-color {
+  background-color: $second-color;
+  color: #fff;
+
+  &:hover,
+  &:active {
+    background-color: darken($second-color, 5);
+    color: #fff;
+  }
+}
+
+.btn-fourth-color {
+  background-color: $fourth-color;
+  border-color: transparent;
+  color: #000;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: darken($fourth-color, 5);
+    border-color: transparent;
+    color: #000;
+  }
+}
+
+.custom-border-right:after {
+  display: block;
+  content: "";
+  border: 1px solid black;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  border-image: linear-gradient(45deg, white, #efebeb, #d2d2d6, #efebeb, white) 23;
+}
+
+.form-group {
+  &.style_1 {
+    label {
+      position: relative;
+      top: 15px;
+      right: 10px;
+      background: linear-gradient(0deg, #fff 0%, #fff 31%, rgba(0, 0, 0, 0) 31%);
+      padding-left: 5px;
+      padding-right: 5px;
+      font-size: 14px;
+      color: gray;
+      transition: 0.3s; // for sticky box redesign
+    }
+  }
+
+  &.style_1 {
+    label {
+      position: relative;
+      top: 0;
+      right: 10px;
+      padding-left: 5px;
+      padding-right: 5px;
+      font-size: 14px;
+      color: gray;
+      transition: 0.3s; // for sticky box redesign
+    }
+  }
+}
+
+/* RESET */
+:focus {
+  outline: none;
+  box-shadow: none !important;
+}
+
+.relative {
+  position: relative;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.toast-container {
+  .ngx-toastr {
+    padding: 0.75rem 50px 0.75rem 1.25rem;
+    background-position: right 20px center;
+    text-align: right;
+    .toast-close-button {
+      float: left;
+    }
+  }
+}
+
+.disable-page {
+  filter: blur(5px);
+}
+#disable-page {
+  display: none;
+  &.show {
+    display: block;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 9999999999;
+    .box {
+      position: fixed;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
