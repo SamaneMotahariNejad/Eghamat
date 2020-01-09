@@ -1,0 +1,14 @@
+@import "../../../shared/styles/app/variables.scss";
+
+.title {
+  border-bottom: solid 1px rgba($first-color, 0.6);
+  margin: 0 auto;
+}
+
+::ng-deep {
+  @media only screen and (max-width: 991px) {
+    .title {
+      width: 100% !important;
+    }
+  }
+}

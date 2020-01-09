@@ -1,3 +1,6 @@
+<div id="overly" (click)="overly()" [ngClass]="{'swal2-container':
+  isNavbarCollapsed === false}"></div>
+
 <div id="Header" class="relative">
   <!-- Nav tabs -->
   <div class="header-wrapper position-absolute w-100">
@@ -5,29 +8,54 @@
       <div class="logo float-left">
         <span>
           LOGO
-        </span> 
+        </span>
       </div>
       <ul class="nav nav-tabs border-bottom-0 float-right" id="navId">
         <li class="nav-item">
-          <a href="#tab1Id" class="nav-link active">Active</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"
-            role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#tab2Id">Action</a>
-            <a class="dropdown-item" href="#tab3Id">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#tab4Id">Action</a>
-          </div>
+          <a href="/" class="font-weight-bold fs-13 nav-link">خانه اصلی</a>
         </li>
         <li class="nav-item">
-          <a href="#tab5Id" class="nav-link">Another link</a>
+          <a href="#" class="font-weight-bold fs-13 nav-link">درباره ما</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link disabled">Disabled</a>
+          <a href="#" class="font-weight-bold fs-13 nav-link">خدمات ما</a>
         </li>
       </ul>
+      <!-- HEADER MOBILE -->
+      <div id="navIdMobile">
+        <span class="navbar-toggle bg-white"
+          [ngClass]="{'position-fixed z-index': isNavbarCollapsed === false}">
+          <button class="navbar-toggler nbta-to-x-rotate-360" type="button"
+            id="navbarsbtn"
+            (click)="isNavbarCollapsed= !isNavbarCollapsed"
+            data-target="#navbarsDefault"
+            aria-controls="navbarsDefault"
+            [attr.aria-expanded]="!isNavbarCollapsed" aria-label="Toggle
+            navigation">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </span>
+
+        <div [ngbCollapse]="isNavbarCollapsed" class="collapse navbar-collapse
+          pt-3"
+          id="navbarsDefault">
+          <div id="navbars">
+            <ul class="navbar-nav pr-4">
+              <li class="nav-item text-right">
+                <a href="/" class="font-weight-bold fs-13 nav-link">خانه اصلی</a>
+              </li>
+              <li class="nav-item text-right">
+                <a href="#" class="font-weight-bold fs-13 nav-link">درباره ما</a>
+              </li>
+              <li class="nav-item text-right">
+                <a href="#" class="font-weight-bold fs-13 nav-link">خدمات ما</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -35,6 +63,9 @@
     <slide>
       <img src="../../../assets/img/slider/1.jpg" alt="first slide"
         style="display: block; width: 100%;">
+      <div class="title-slider">
+        <span>Wise Business Start-up Academy </span>
+      </div>
     </slide>
     <slide>
       <img src="../../../assets/img/slider/3.jpg" alt="first slide"

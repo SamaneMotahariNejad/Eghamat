@@ -1,7 +1,139 @@
+@import "../../shared/styles/app/variables.scss";
+
 .header-wrapper {
   top: 0;
   z-index: 1;
   background: rgba(255, 255, 255, 0.8);
   height: 70px;
   padding-top: 15px;
+  .nav-link {
+    color: #5f5f5f;
+    &:hover {
+      border-color: unset;
+    }
+  }
+}
+.item.carousel-item {
+  position: relative;
+  .title-slider {
+    position: absolute;
+    bottom: 50px;
+    background: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    width: 50%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    border-radius: 3px;
+    padding: 10px;
+    animation: shimmy 3s;
+    transition: ease-in-out 3s;
+  }
+}
+#overly {
+  display: none;
+  &.swal2-container {
+    display: block;
+    background: rgba(0, 0, 0, 0.38);
+    z-index: 1;
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+  }
+}
+// ** media
+::ng-deep {
+  @media only screen and (max-width: 991px) {
+    #navId {
+      display: none;
+    }
+    .navbar-toggle {
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      display: block;
+      height: 39px;
+      &.z-index {
+        z-index: 2;
+        width: 60%;
+      }
+      .navbar-toggler {
+        float: right;
+        padding-top: 6px;
+        &:focus {
+          outline: unset;
+        }
+        .icon-bar {
+          display: block;
+          height: 0.1em;
+          width: 1.2em;
+          background: currentcolor;
+          margin-top: 0.3em;
+          margin-bottom: 0.3em;
+          background: $first-color;
+          transform: translateZ(0);
+          backface-visibility: hidden;
+          perspective: 1000;
+        }
+
+        &.nbta-to-x-rotate-360 {
+          .icon-bar {
+            transition: all 0.5s;
+            transform-origin: center;
+
+            &:nth-child(2) {
+              transition-delay: 0.5s - 0.2s;
+            }
+          }
+
+          &[aria-expanded="true"] {
+            .icon-bar {
+              &:nth-child(1) {
+                transform: translate(0em, 0.4em) rotate(-405deg);
+              }
+
+              &:nth-child(2) {
+                transition: all 0.2s;
+                opacity: 0;
+              }
+
+              &:nth-child(3) {
+                transform: translate(0em, -0.4em) rotate(405deg);
+              }
+            }
+          }
+        }
+      }
+    }
+    #navbarsDefault {
+      right: 0;
+      height: 100vh;
+      background: #ffff;
+      z-index: 12;
+      position: fixed;
+      overflow-y: auto;
+      overflow-x: hidden;
+      bottom: 0;
+      width: 60%;
+      top: 38px;
+    }
+    .header-wrapper {
+      position: unset !important;
+      height: 50px !important;
+    }
+  }
+  @media only screen and (min-width: 991px) {
+    #navIdMobile {
+      display: none;
+    }
+  }
+}
+
+@keyframes shimmy {
+  0% {
+    transform: translate(-200%, 0);
+  }
+  100% {
+    transform: translate(0, 0px);
+  }
 }

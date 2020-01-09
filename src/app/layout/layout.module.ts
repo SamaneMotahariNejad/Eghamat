@@ -5,13 +5,15 @@ import { FooterComponent } from './footer/footer.component';
 import { SharedModule } from '../shared/shared.module';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
     imports: [
         SharedModule,
         CarouselModule.forRoot(),
-        BsDropdownModule.forRoot()
+        BsDropdownModule.forRoot(),
+        NgbCollapseModule
     ],
     providers: [
     ],

@@ -1,0 +1,36 @@
+@import "../../../app/shared/styles/app/variables.scss";
+
+.footer-wrapper ul li {
+  list-style-type: none;
+  a {
+    color: $third-color;
+
+    &:hover:before {
+      font-weight: 900;
+      margin-left: 15px;
+    }
+    &:before {
+      content: "•";
+      font-size: 20px;
+      margin-left: 10px;
+      transition: margin-left 0.3s;
+      color: $first-color;
+      position: relative;
+      top: 5px;
+    }
+  }
+}
+.copyright ul li {
+  list-style-type: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 30px;
+  .icon i {
+    top: 7px;
+    right: 0;
+    left: 0;
+    &.fa-paper-plane {
+      top: 9px;
+    }
+  }
+}

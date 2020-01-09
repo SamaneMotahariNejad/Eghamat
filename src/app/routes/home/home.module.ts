@@ -5,6 +5,8 @@ import { SharedModule } from '../../shared/shared.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HomeComponent } from './home.component';
 import { SecondSectionComponent } from './second-section/second-section.component';
+import { ThirdSectionComponent } from './third-section/third-section.component';
+import { FourthSectionComponent } from './fourth-section/fourth-section.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent }
@@ -18,7 +20,9 @@ const routes: Routes = [
   ],
   declarations: [
     HomeComponent,
-    SecondSectionComponent
+    SecondSectionComponent,
+    ThirdSectionComponent,
+    FourthSectionComponent
   ],
   exports: [
     RouterModule,

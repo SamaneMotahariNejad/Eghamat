@@ -1,0 +1,36 @@
+@import "../../../shared/styles/app/variables.scss";
+.attributes {
+  border-top: solid 4px $first-color;
+  border-radius: 0 0 5px 5px;
+  max-height: 130px;
+  min-height: 130px;
+}
+.image {
+  .price {
+    width: 160px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.9);
+    bottom: 0;
+    right: 0;
+    color: #000;
+    font-size: 14px;
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  img {
+    width: 100%;
+    min-height: 233px;
+    border-radius: 5px 5px 0 0;
+  }
+}
+
+::ng-deep {
+  @media only screen and (max-width: 991px) {
+    #FourthSection .item {
+      margin-bottom: 1.5rem !important;
+    }
+  }
+}
