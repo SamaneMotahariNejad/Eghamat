@@ -1,0 +1,28 @@
+@import "../../../../shared/styles/app/variables.scss";
+
+.aboutUs-wrapper {
+  border-right: solid 3px $first-color !important;
+  border-left: solid 3px $first-color !important;
+}
+#aboutUs {
+  min-height: 700px;
+  .img-aboutus {
+    background-size: cover;
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    transition: 0.5s;
+    height: 350px;
+    background-image: url("../../../../../assets/img/pages/img3.jpg");
+  }
+  .about-content {
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+  .title {
+    border-bottom: solid 1px rgba(255, 161, 0, 0.6);
+    margin: 0 auto;
+  }
+}

@@ -1,57 +1,66 @@
 @import "../../shared/styles/app/variables.scss";
 
-.header-wrapper {
-  top: 0;
-  z-index: 1;
-  background: rgba(255, 255, 255, 0.8);
+#Header {
   height: 70px;
-  .nav.nav-tabs {
-    min-height: 70px;
-    padding-top: 15px;
-  }
-  .nav-link {
-    color: #5f5f5f;
-    border: 0;
-    &:hover {
-      border-color: unset;
-      border: unset;
-      color: $first-color;
+  .header-wrapper {
+    top: 0;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.8);
+    height: 70px;
+    .nav.nav-tabs {
+      min-height: 70px;
     }
-  }
-  .nav-item.service,
-  .nav-item.germany {
-    .drop-down {
-      display: none;
-      background: rgba(255, 255, 255, 0.8);
-      border-top: solid 1px $first-color;
-      top: 55px;
-      white-space: nowrap;
-      list-style-type: none;
-      min-width: 150px;
-      text-align: right;
+    .nav-link {
+      color: #5f5f5f;
+      border: 0;
+      &.main {
+        padding: 25px 1rem;
+      }
+      &:hover {
+        border-color: unset;
+        border: unset;
+        color: $first-color;
+      }
     }
-    &:hover .drop-down {
-      display: block;
+    .nav-item.service {
+      .drop-down {
+        display: none;
+        background: rgba(255, 255, 255, 0.8);
+        border-top: solid 1px $first-color;
+        top: 70px;
+        width: 600px;
+        white-space: nowrap;
+        text-align: right;
+        ul {
+          list-style-type: none;
+          &.first-menu {
+            min-width: 250px;
+          }
+          &.second-menu {
+            min-width: 350px;
+          }
+        }
+      }
+    }
+    .nav-item.service,
+    .nav-item.germany {
+      .drop-down {
+        display: none;
+        background: rgba(255, 255, 255, 0.8);
+        border-top: solid 1px $first-color;
+        top: 70px;
+        white-space: nowrap;
+        list-style-type: none;
+        min-width: 150px;
+        text-align: right;
+      }
+      &:hover .drop-down {
+        display: block;
+      }
     }
   }
 }
-.item.carousel-item {
-  position: relative;
-  .title-slider {
-    position: absolute;
-    bottom: 50px;
-    background: rgba(255, 255, 255, 0.7);
-    text-align: center;
-    width: 50%;
-    right: 0;
-    left: 0;
-    margin: 0 auto;
-    border-radius: 3px;
-    padding: 10px;
-    animation: shimmy 3s;
-    transition: ease-in-out 3s;
-  }
-}
+
 #overly {
   display: none;
   &.swal2-container {
@@ -148,14 +157,5 @@
     #navIdMobile {
       display: none;
     }
-  }
-}
-
-@keyframes shimmy {
-  0% {
-    transform: translate(-200%, 0);
-  }
-  100% {
-    transform: translate(0, 0px);
   }
 }

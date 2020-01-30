@@ -8,17 +8,21 @@ import { SecondSectionComponent } from './home/second-section/second-section.com
 import { ThirdSectionComponent } from './home/third-section/third-section.component';
 import { FourthSectionComponent } from './home/fourth-section/fourth-section.component';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { TouristResidenceComponent } from './pages/tourist-residence/tourist-residence.component';
 
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'aboutUs', component: AboutUsComponent }
+  { path: 'aboutUs', component: AboutUsComponent },
+  { path: 'touristResidence', component: TouristResidenceComponent },
 ];
 
 @NgModule({
   imports: [
     SharedModule,
     NgbModule,
+    CarouselModule.forRoot(),
     RouterModule.forChild(routes)
   ],
   declarations: [
@@ -26,7 +30,8 @@ const routes: Routes = [
     SecondSectionComponent,
     ThirdSectionComponent,
     FourthSectionComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    TouristResidenceComponent
   ],
   exports: [
     RouterModule,

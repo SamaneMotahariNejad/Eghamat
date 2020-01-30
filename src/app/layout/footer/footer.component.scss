@@ -1,25 +1,42 @@
 @import "../../../app/shared/styles/app/variables.scss";
 
-.footer-wrapper ul li {
-  list-style-type: none;
-  a {
-    color: $third-color;
+.footer-wrapper {
+  .title {
+    border: 0px;
+    border-bottom: 2px solid;
+    border-image: linear-gradient(
+      to left,
+      rgba($first-color, 1) 10%,
+      rgba($first-color, 0.5) 20%,
+      transparent 70%
+    );
+    border-image-slice: 1;
+    margin: auto;
+    text-decoration: none;
+    padding-bottom: 12px;
+  }
+  ul li {
+    list-style-type: none;
+    a {
+      color: $third-color;
 
-    &:hover:before {
-      font-weight: 900;
-      margin-left: 15px;
-    }
-    &:before {
-      content: "•";
-      font-size: 20px;
-      margin-left: 10px;
-      transition: margin-left 0.3s;
-      color: $first-color;
-      position: relative;
-      top: 5px;
+      &:hover:before {
+        font-weight: 900;
+        margin-left: 15px;
+      }
+      &:before {
+        content: "•";
+        font-size: 20px;
+        margin-left: 10px;
+        transition: margin-left 0.3s;
+        color: $first-color;
+        position: relative;
+        top: 5px;
+      }
     }
   }
 }
+
 .copyright ul li {
   list-style-type: none;
   width: 35px;
