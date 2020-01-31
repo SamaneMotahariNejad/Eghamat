@@ -1,0 +1,17 @@
+@import "../../../../shared/styles/app/variables.scss";
+.main-header {
+  border-bottom: solid 1px rgba(255, 161, 0, 0.6);
+  margin: 0 auto;
+}
+::ng-deep {
+  #NoelLife {
+    margin: 0 auto;
+    text-align: center;
+  }
+  carousel {
+    border: solid $first-color;
+    padding: 8px;
+    display: inline-block;
+    width: 85%;
+  }
+}

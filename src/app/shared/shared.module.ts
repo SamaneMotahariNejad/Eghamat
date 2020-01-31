@@ -5,7 +5,7 @@ import { RouterModule } from '@angular/router';
 import { CollapseModule } from 'ngx-bootstrap/collapse';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { TabsModule } from 'ngx-bootstrap/tabs';
-import { LayoutModule } from '../layout/layout.module';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 @NgModule({
     imports: [
@@ -14,7 +14,8 @@ import { LayoutModule } from '../layout/layout.module';
         ReactiveFormsModule,
         CollapseModule.forRoot(),
         ModalModule.forRoot(),
-        TabsModule.forRoot()
+        TabsModule.forRoot(),
+        CarouselModule.forRoot()
     ],
     providers: [
     ],
