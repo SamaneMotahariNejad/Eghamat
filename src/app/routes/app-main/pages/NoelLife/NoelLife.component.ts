@@ -10,6 +10,10 @@ export class NoelLifeComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
   }
 
 }
