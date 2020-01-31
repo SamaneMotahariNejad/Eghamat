@@ -1,0 +1,12 @@
+@import "../../../../shared/styles/app/variables.scss";
+
+.main-header {
+  background-size: cover;
+  padding: 50px 30px;
+  background-image: url("../../../../../assets/img/pages/passport-bg.jpg");
+  height: 190px;
+}
+.title {
+  border-bottom: solid 1px rgba(255, 161, 0, 0.6);
+  margin: 0 auto;
+}

@@ -3,8 +3,5 @@
 .main-header {
   background-size: cover;
   padding: 50px 30px;
-  background-image: linear-gradient($second-color, transparent);
-}
-.bottom-contact-info {
-  margin: auto;
+  background-image: linear-gradient(rgba($second-color, 0.5), transparent);
 }

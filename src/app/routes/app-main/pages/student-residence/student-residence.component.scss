@@ -1,0 +1,24 @@
+@import "../../../../shared/styles/app/variables.scss";
+
+.main-header {
+  background-image: url("../../../../../assets/img/pages/student-residence.jpg");
+  background-size: cover;
+  padding: 50px 30px;
+  height: 300px;
+  background-position: bottom center;
+}
+.title {
+  border-bottom: solid 1px rgba(255, 161, 0, 0.6);
+  margin: 0 auto;
+}
+.student-residence-turkey:before {
+    content: "\f137";
+    color: $first-color;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: 5px;
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+  }
+  

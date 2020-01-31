@@ -1,0 +1,17 @@
+@import "../../../../shared/styles/app/variables.scss";
+
+.main-header {
+  background-size: cover;
+  padding: 50px 30px;
+  background-image: linear-gradient($second-color, transparent);
+}
+.international-exhibitions:before {
+  content: "\f137";
+  color: $first-color;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: 5px;
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 900;
+}
