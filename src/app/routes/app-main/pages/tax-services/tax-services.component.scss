@@ -1,0 +1,8 @@
+@import "../../../../shared/styles/app/variables.scss";
+
+.main-header {
+  background-size: cover;
+  padding: 50px 30px;
+  background-image: linear-gradient($second-color, transparent);
+}
+

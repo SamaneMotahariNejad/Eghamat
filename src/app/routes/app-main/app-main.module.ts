@@ -25,6 +25,10 @@ import { NoelTowerComponent } from './pages/NoelTower/NoelTower.component';
 import { NoelParkComponent } from './pages/NoelPark/NoelPark.component';
 import { NoelLifeComponent } from './pages/NoelLife/NoelLife.component';
 import { AvarpaComponent } from './pages/Avarpa/Avarpa.component';
+import { EntrepreneurialResidencyComponent } from './pages/entrepreneurial-residency/entrepreneurial-residency.component';
+import { RegisteringCompanyComponent } from './pages/registering-company/registering-company.component';
+import { TrademarkRegistrationComponent } from './pages/trademark-registration/trademark-registration.component';
+import { TaxServicesComponent } from './pages/tax-services/tax-services.component';
 
 
 const routes: Routes = [
@@ -46,6 +50,11 @@ const routes: Routes = [
   { path: 'NoelPark', component: NoelParkComponent },
   { path: 'NoelLife', component: NoelLifeComponent },
   { path: 'Avarpa', component: AvarpaComponent },
+  { path: 'entrepreneurialResidency', component: EntrepreneurialResidencyComponent },
+  { path: 'entrepreneurialResidency', component: EntrepreneurialResidencyComponent },
+  { path: 'registeringCompany', component: RegisteringCompanyComponent },
+  { path: 'TrademarkRegistration', component: TrademarkRegistrationComponent },
+  { path: 'TaxServices', component: TaxServicesComponent },
 ];
 
 @NgModule({
@@ -76,7 +85,11 @@ const routes: Routes = [
     NoelTowerComponent,
     NoelParkComponent,
     NoelLifeComponent,
-    AvarpaComponent
+    AvarpaComponent,
+    EntrepreneurialResidencyComponent,
+    RegisteringCompanyComponent,
+    TrademarkRegistrationComponent,
+    TaxServicesComponent
   ],
   exports: [
     RouterModule,
