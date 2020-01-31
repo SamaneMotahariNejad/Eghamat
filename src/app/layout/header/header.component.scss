@@ -152,6 +152,12 @@
       position: unset !important;
       height: 50px !important;
     }
+    #Header {
+      height: auto !important;
+      .logo img {
+        height: 50px;
+      }
+    }
   }
   @media only screen and (min-width: 991px) {
     #navIdMobile {

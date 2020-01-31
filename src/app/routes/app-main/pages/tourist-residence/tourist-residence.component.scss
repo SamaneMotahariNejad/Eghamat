@@ -8,3 +8,12 @@
 .bottom-contact-info {
   margin: auto;
 }
+
+// ** media
+::ng-deep {
+  @media only screen and (max-width: 767px) {
+    .bottom-contact-info {
+      width: 100% !important;
+    }
+  }
+}

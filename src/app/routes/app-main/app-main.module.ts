@@ -40,6 +40,7 @@ const routes: Routes = [
   { path: 'internationalExhibitions', component: InternationalExhibitionsComponent },
   { path: 'marketResearch', component: MarketResearchComponent },
   { path: 'digitalCurrency', component: DigitalCurrencyComponent },
+  { path: 'hotelsProject', component: HotelsProjectComponent },
   { path: 'bitcoin', component: BitcoinComponent },
   { path: 'NoelTower', component: NoelTowerComponent },
   { path: 'NoelPark', component: NoelParkComponent },
