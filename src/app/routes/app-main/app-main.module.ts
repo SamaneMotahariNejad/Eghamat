@@ -21,6 +21,7 @@ import { DigitalCurrencyComponent } from './pages/digital-currency/digital-curre
 import { BitcoinComponent } from './pages/bitcoin/bitcoin.component';
 import { InternationalExhibitionsComponent } from './pages/international-exhibitions/international-exhibitions.component';
 import { HotelsProjectComponent } from './pages/hotels-project/hotels-project.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 
 const routes: Routes = [
@@ -38,6 +39,7 @@ const routes: Routes = [
   { path: 'digitalCurrency', component: DigitalCurrencyComponent },
   { path: 'bitcoin', component: BitcoinComponent },
   { path: 'hotelsProject', component: HotelsProjectComponent },
+  { path: 'contactUs', component: ContactUsComponent },
 ];
 
 @NgModule({
@@ -64,7 +66,8 @@ const routes: Routes = [
     DigitalCurrencyComponent,
     BitcoinComponent,
     InternationalExhibitionsComponent,
-    HotelsProjectComponent
+    HotelsProjectComponent,
+    ContactUsComponent
   ],
   exports: [
     RouterModule,
