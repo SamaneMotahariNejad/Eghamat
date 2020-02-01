@@ -13,6 +13,11 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
 
+  showMobileMenu(id) {
+    const element = document.getElementById(id);
+    element.classList.toggle('open');
+  }
+
   overly() {
     this.isNavbarCollapsed = true;
   }

@@ -21,14 +21,7 @@ import { DigitalCurrencyComponent } from './pages/digital-currency/digital-curre
 import { BitcoinComponent } from './pages/bitcoin/bitcoin.component';
 import { InternationalExhibitionsComponent } from './pages/international-exhibitions/international-exhibitions.component';
 import { HotelsProjectComponent } from './pages/hotels-project/hotels-project.component';
-import { NoelTowerComponent } from './pages/NoelTower/NoelTower.component';
-import { NoelParkComponent } from './pages/NoelPark/NoelPark.component';
-import { NoelLifeComponent } from './pages/NoelLife/NoelLife.component';
-import { AvarpaComponent } from './pages/Avarpa/Avarpa.component';
-import { EntrepreneurialResidencyComponent } from './pages/entrepreneurial-residency/entrepreneurial-residency.component';
-import { RegisteringCompanyComponent } from './pages/registering-company/registering-company.component';
-import { TrademarkRegistrationComponent } from './pages/trademark-registration/trademark-registration.component';
-import { TaxServicesComponent } from './pages/tax-services/tax-services.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 
 const routes: Routes = [
@@ -45,16 +38,7 @@ const routes: Routes = [
   { path: 'marketResearch', component: MarketResearchComponent },
   { path: 'digitalCurrency', component: DigitalCurrencyComponent },
   { path: 'hotelsProject', component: HotelsProjectComponent },
-  { path: 'bitcoin', component: BitcoinComponent },
-  { path: 'NoelTower', component: NoelTowerComponent },
-  { path: 'NoelPark', component: NoelParkComponent },
-  { path: 'NoelLife', component: NoelLifeComponent },
-  { path: 'Avarpa', component: AvarpaComponent },
-  { path: 'entrepreneurialResidency', component: EntrepreneurialResidencyComponent },
-  { path: 'entrepreneurialResidency', component: EntrepreneurialResidencyComponent },
-  { path: 'registeringCompany', component: RegisteringCompanyComponent },
-  { path: 'TrademarkRegistration', component: TrademarkRegistrationComponent },
-  { path: 'TaxServices', component: TaxServicesComponent },
+  { path: 'contactUs', component: ContactUsComponent },
 ];
 
 @NgModule({
@@ -82,14 +66,7 @@ const routes: Routes = [
     BitcoinComponent,
     InternationalExhibitionsComponent,
     HotelsProjectComponent,
-    NoelTowerComponent,
-    NoelParkComponent,
-    NoelLifeComponent,
-    AvarpaComponent,
-    EntrepreneurialResidencyComponent,
-    RegisteringCompanyComponent,
-    TrademarkRegistrationComponent,
-    TaxServicesComponent
+    ContactUsComponent
   ],
   exports: [
     RouterModule,

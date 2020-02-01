@@ -25,41 +25,33 @@
             nav-link main">خدمات ترکیه</a>
           <div class="drop-down position-absolute">
             <ul class="d-inline-block p-0 m-0 first-menu border-left">
-              <li class="border-bottom"><a routerLink="/touristResidence"
-                  class="font-weight-bold fs-13 nav-link
+              <li class="border-bottom"><a routerLink="/touristResidence" class="font-weight-bold fs-13 nav-link
                   text-first-color"> اقامت توریستی </a></li>
-              <li class="border-bottom"><a routerLink="/workResidence"
-                  class="font-weight-bold
+              <li class="border-bottom"><a routerLink="/workResidence" class="font-weight-bold
                   fs-13
                   nav-link
                   text-first-color"> اقامت کاری </a></li>
-              <li class="border-bottom"><a routerLink="/permanentResidency"
-                  class="font-weight-bold
+              <li class="border-bottom"><a routerLink="/permanentResidency" class="font-weight-bold
                   fs-13
                   nav-link
                   text-first-color"> اقامت دائم </a></li>
-              <li class="border-bottom"><a routerLink="/passport"
-                  class="font-weight-bold
+              <li class="border-bottom"><a routerLink="/passport" class="font-weight-bold
                   fs-13
                   nav-link
                   text-first-color"> پاسپورت (شهروندی) </a></li>
-              <li class="border-bottom"><a routerLink="/studentResidence"
-                  class="font-weight-bold
+              <li class="border-bottom"><a routerLink="/studentResidence" class="font-weight-bold
                   fs-13
                   nav-link
                   text-first-color"> اقامت دانشجویی </a></li>
-              <li class="border-bottom"><a routerLink="/bankAccount"
-                  class="font-weight-bold
+              <li class="border-bottom"><a routerLink="/bankAccount" class="font-weight-bold
                   fs-13
                   nav-link
                   text-first-color"> افتتاح حساب بانکی </a></li>
-              <li class="border-bottom"><a routerLink="/companyRegistration"
-                  class="font-weight-bold
+              <li class="border-bottom"><a routerLink="/companyRegistration" class="font-weight-bold
                   fs-13
                   nav-link
                   text-first-color"> ثبت شرکت </a></li>
-              <li class="border-bottom"><a routerLink="/marketResearch"
-                  class="font-weight-bold
+              <li class="border-bottom"><a routerLink="/marketResearch" class="font-weight-bold
                   fs-13
                   nav-link
                   text-first-color"> تحقیقات بازار
@@ -80,14 +72,22 @@
                   fs-13
                   nav-link
                   text-first-color">پروژه هتل های کوچک </a></li>
+<<<<<<< HEAD
               <li class="border-bottom"><a routerLink="/digitalCurrency"
                   class="font-weight-bold
+=======
+              <li class="border-bottom"><a href="/digitalCurrency" class="font-weight-bold
+>>>>>>> 1f2b07725306e50d311ddc18097f85e789f509eb
                   fs-13
                   nav-link
                   text-first-color"> صرافی دیجیتال
                 </a></li>
+<<<<<<< HEAD
               <li class="border-bottom"><a routerLink="/bitcoin"
                   class="font-weight-bold
+=======
+              <li class="border-bottom"><a href="/bitcoin" class="font-weight-bold
+>>>>>>> 1f2b07725306e50d311ddc18097f85e789f509eb
                   fs-13
                   nav-link
                   text-first-color"> سرمایه گذاری در استخراج بیت کوین
@@ -159,13 +159,9 @@
       </ul>
       <!-- HEADER MOBILE -->
       <div id="navIdMobile">
-        <span class="navbar-toggle bg-white"
-          [ngClass]="{'position-fixed z-index': isNavbarCollapsed === false}">
-          <button class="navbar-toggler nbta-to-x-rotate-360" type="button"
-            id="navbarsbtn"
-            (click)="isNavbarCollapsed= !isNavbarCollapsed"
-            data-target="#navbarsDefault"
-            aria-controls="navbarsDefault"
+        <span class="navbar-toggle bg-white" [ngClass]="{'position-fixed z-index': isNavbarCollapsed === false}">
+          <button class="navbar-toggler nbta-to-x-rotate-360" type="button" id="navbarsbtn"
+            (click)="isNavbarCollapsed= !isNavbarCollapsed" data-target="#navbarsDefault" aria-controls="navbarsDefault"
             [attr.aria-expanded]="!isNavbarCollapsed" aria-label="Toggle
             navigation">
             <span class="icon-bar"></span>
@@ -175,18 +171,128 @@
         </span>
 
         <div [ngbCollapse]="isNavbarCollapsed" class="collapse navbar-collapse
-          pt-3"
-          id="navbarsDefault">
+          pt-3" id="navbarsDefault">
           <div id="navbars">
             <ul class="navbar-nav pr-4">
               <li class="nav-item text-right">
-                <a href="/" class="font-weight-bold fs-13 nav-link">خانه اصلی</a>
+                <a routerLink="/" class="font-weight-bold fs-13 nav-link">
+                  خانه اصلی
+                </a>
               </li>
               <li class="nav-item text-right">
-                <a href="#" class="font-weight-bold fs-13 nav-link">درباره ما</a>
+                <a routerLink="/aboutUs" class="font-weight-bold fs-13 nav-link">درباره ما</a>
               </li>
-              <li class="nav-item text-right">
-                <a href="#" class="font-weight-bold fs-13 nav-link">خدمات ما</a>
+              <li class="nav-item text-right" (click)="showMobileMenu('drop-down-turkey')">
+                <a href="#" class="font-weight-bold fs-13 nav-link">خدمات ترکیه</a>
+                <div id="drop-down-turkey" class="drop-down">
+                  <ul class="d-inline-block p-0 m-0 first-menu">
+                    <li><a routerLink="/touristResidence" class="font-weight-bold fs-13 nav-link
+                        text-first-color"> اقامت توریستی </a></li>
+                    <li><a routerLink="/workResidence" class="font-weight-bold
+                        fs-13
+                        nav-link
+                        text-first-color"> اقامت کاری </a></li>
+                    <li><a routerLink="/permanentResidency" class="font-weight-bold
+                        fs-13
+                        nav-link
+                        text-first-color"> اقامت دائم </a></li>
+                    <li><a routerLink="/passport" class="font-weight-bold
+                        fs-13
+                        nav-link
+                        text-first-color"> پاسپورت (شهروندی) </a></li>
+                    <li><a routerLink="/studentResidence" class="font-weight-bold
+                        fs-13
+                        nav-link
+                        text-first-color"> اقامت دانشجویی </a></li>
+                    <li><a routerLink="/bankAccount" class="font-weight-bold
+                        fs-13
+                        nav-link
+                        text-first-color"> افتتاح حساب بانکی </a></li>
+                    <li><a routerLink="/companyRegistration" class="font-weight-bold
+                        fs-13
+                        nav-link
+                        text-first-color"> ثبت شرکت </a></li>
+                    <li><a routerLink="/marketResearch" class="font-weight-bold
+                        fs-13
+                        nav-link
+                        text-first-color"> تحقیقات بازار
+                      </a></li>
+                    <li><a href="/internationalExhibitions" class="font-weight-bold
+                        fs-13
+                        nav-link
+                        text-first-color"> حضور در نمایشگاههای بین المللی
+                      </a></li>
+                    <li class="fs-12 text-first-color pr-4 pl-4 pt-2 pb-2">
+                      <strong>پروژه های سرمایه گذاری</strong>
+                    </li>
+                    <li><a href="/hotelsProject" class="font-weight-bold
+                          fs-13
+                          nav-link
+                          text-first-color">پروژه هتل های کوچک </a></li>
+                    <li><a href="/digitalCurrency" class="font-weight-bold
+                          fs-13
+                          nav-link
+                          text-first-color"> صرافی دیجیتال
+                      </a></li>
+                    <li><a href="/bitcoin" class="font-weight-bold
+                          fs-13
+                          nav-link
+                          text-first-color"> سرمایه گذاری در استخراج بیت کوین
+                      </a></li>
+                    <li class="fs-12 text-first-color pr-4 pl-4 pt-2 pb-2">
+                      <strong>فروش ملک</strong>
+                    </li>
+                    <li><a href="#" class="font-weight-bold
+                          fs-13
+                          nav-link
+                          text-first-color"> پروژه نورل تاور (شیشلی)
+                      </a></li>
+                    <li><a href="#" class="font-weight-bold
+                          fs-13
+                          nav-link
+                          text-first-color"> پروژه نورل پارک (باهچه شهیر)
+
+                      </a></li>
+                    <li><a href="#" class="font-weight-bold
+                          fs-13
+                          nav-link
+                          text-first-color"> پروژه نورل لایف (ماسلاک)
+                      </a></li>
+                    <li><a href="#" class="font-weight-bold
+                          fs-13
+                          nav-link
+                          text-first-color"> پروژه آورپا (عمرانیه)
+                      </a></li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="nav-item text-right" (click)="showMobileMenu('drop-down-germany')">
+                <a href="#" class="font-weight-bold fs-13 nav-link">خدمات آلمان</a>
+                <div id="drop-down-germany" class="drop-down">
+                  <ul class="m-0 p-0">
+                    <li><a href="#" class="font-weight-bold fs-13
+                        nav-link
+                        text-first-color"> اقامت کارآفرینی
+                      </a></li>
+                    <li><a href="#" class="font-weight-bold fs-13
+                        nav-link
+                        text-first-color">راه اندازی و ثبت شرکت یا شعبه
+                      </a></li>
+                    <li><a href="#" class="font-weight-bold fs-13
+                        nav-link
+                        text-first-color">حسابداری و خدمات مالیاتی
+                      </a></li>
+                    <li><a href="#" class="font-weight-bold fs-13
+                        nav-link
+                        text-first-color">ثبت برند و علامت تجاری
+                      </a></li>
+                    <li><a href="#" class="font-weight-bold fs-13
+                        nav-link
+                        text-first-color">دفتر کار و خدمات کاری
+                      </a></li>
+                  </ul>
+                </div>
               </li>
             </ul>
           </div>

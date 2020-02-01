@@ -13,9 +13,6 @@
     .nav-link {
       color: #5f5f5f;
       border: 0;
-      &.main {
-        padding: 25px 1rem;
-      }
       &:hover {
         border-color: unset;
         border: unset;
@@ -151,6 +148,18 @@
     .header-wrapper {
       position: unset !important;
       height: 50px !important;
+      #drop-down-turkey,
+      #drop-down-germany {
+        display: none;
+        transition: all 3s;
+        ul {
+          list-style-type: none;
+        }
+        &.open {
+          display: block;
+          margin-right: 15px;
+        }
+      }
     }
     #Header {
       height: auto !important;
