@@ -174,11 +174,9 @@
       .logo img {
         height: 50px;
       }
-    }
-    #Header {
-      height: auto !important;
-      .logo img {
-        height: 50px;
+      .header-wrapper .nav-item > .nav-link {
+        height: 55px !important;
+        padding-top: 0 !important;
       }
     }
   }
