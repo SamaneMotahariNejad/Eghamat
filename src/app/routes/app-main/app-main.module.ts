@@ -22,6 +22,14 @@ import { BitcoinComponent } from './pages/bitcoin/bitcoin.component';
 import { InternationalExhibitionsComponent } from './pages/international-exhibitions/international-exhibitions.component';
 import { HotelsProjectComponent } from './pages/hotels-project/hotels-project.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { NoelTowerComponent } from './pages/NoelTower/NoelTower.component';
+import { NoelParkComponent } from './pages/NoelPark/NoelPark.component';
+import { NoelLifeComponent } from './pages/NoelLife/NoelLife.component';
+import { AvarpaComponent } from './pages/Avarpa/Avarpa.component';
+import { EntrepreneurialResidencyComponent } from './pages/entrepreneurial-residency/entrepreneurial-residency.component';
+import { RegisteringCompanyComponent } from './pages/registering-company/registering-company.component';
+import { TrademarkRegistrationComponent } from './pages/trademark-registration/trademark-registration.component';
+import { TaxServicesComponent } from './pages/tax-services/tax-services.component';
 
 
 const routes: Routes = [
@@ -34,10 +42,19 @@ const routes: Routes = [
   { path: 'studentResidence', component: StudentResidenceComponent },
   { path: 'bankAccount', component: BankAccountComponent },
   { path: 'companyRegistration', component: CompanyRegistrationComponent },
-  { path: 'internationalExhibitions', component: InternationalExhibitionsComponent },
   { path: 'marketResearch', component: MarketResearchComponent },
-  { path: 'digitalCurrency', component: DigitalCurrencyComponent },
+  { path: 'internationalExhibitions', component: InternationalExhibitionsComponent },
   { path: 'hotelsProject', component: HotelsProjectComponent },
+  { path: 'digitalCurrency', component: DigitalCurrencyComponent },
+  { path: 'bitcoin', component: BitcoinComponent },
+  { path: 'NoelTower', component: NoelTowerComponent },
+  { path: 'NoelPark', component: NoelParkComponent },
+  { path: 'NoelLife', component: NoelLifeComponent },
+  { path: 'Avarpa', component: AvarpaComponent },
+  { path: 'entrepreneurialResidency', component: EntrepreneurialResidencyComponent },
+  { path: 'registeringCompany', component: RegisteringCompanyComponent },
+  { path: 'TrademarkRegistration', component: TrademarkRegistrationComponent },
+  { path: 'TaxServices', component: TaxServicesComponent },
   { path: 'contactUs', component: ContactUsComponent },
 ];
 
@@ -64,9 +81,17 @@ const routes: Routes = [
     MarketResearchComponent,
     DigitalCurrencyComponent,
     BitcoinComponent,
+    NoelTowerComponent,
+    NoelParkComponent,
+    NoelLifeComponent,
+    AvarpaComponent,
+    EntrepreneurialResidencyComponent,
     InternationalExhibitionsComponent,
     HotelsProjectComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    RegisteringCompanyComponent,
+    TrademarkRegistrationComponent,
+    TaxServicesComponent
   ],
   exports: [
     RouterModule,

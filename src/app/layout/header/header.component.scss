@@ -13,32 +13,40 @@
     .nav-link {
       color: #5f5f5f;
       border: 0;
+
       &:hover {
         border-color: unset;
         border: unset;
         color: $first-color;
       }
     }
-    .nav-item.service {
-      .drop-down {
-        display: none;
-        background: rgba(255, 255, 255, 0.9);
-        border-top: solid 1px $first-color;
-        top: 70px;
-        width: 600px;
-        white-space: nowrap;
-        text-align: right;
-        ul {
-          list-style-type: none;
-          &.first-menu {
-            min-width: 250px;
-          }
-          &.second-menu {
-            min-width: 350px;
+    .nav-item {
+      > .nav-link {
+        height: 71px;
+        padding-top: 25px;
+      }
+      &.service {
+        .drop-down {
+          display: none;
+          background: rgba(255, 255, 255, 0.9);
+          border-top: solid 1px $first-color;
+          top: 70px;
+          width: 600px;
+          white-space: nowrap;
+          text-align: right;
+          ul {
+            list-style-type: none;
+            &.first-menu {
+              min-width: 250px;
+            }
+            &.second-menu {
+              min-width: 350px;
+            }
           }
         }
       }
     }
+
     .nav-item.service,
     .nav-item.germany {
       .drop-down {

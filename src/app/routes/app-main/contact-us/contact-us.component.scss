@@ -1,6 +1,47 @@
-#companyRegistration {
+#contactUs {
   .main-header {
     border-bottom: solid 1px rgba(255, 161, 0, 0.6);
     margin: 0 auto;
+  }
+  .card {
+    min-height: 450px;
+  }
+  .img-wrapper {
+    left: 0;
+    top: 0;
+    img {
+      height: 400px;
+    }
+  }
+}
+.socials li {
+  list-style-type: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 30px;
+  .icon i {
+    top: 7px;
+    right: 0;
+    left: 0;
+    &.fa-paper-plane {
+      top: 9px;
+    }
+  }
+}
+::ng-deep {
+  @media only screen and (max-width: 991px) {
+    #contactUs {
+      .phone {
+        margin-right: 0 !important;
+        text-align: center;
+      }
+      .img-wrapper {
+        position: relative !important;
+        img {
+          width: 100%;
+          height: auto !important;
+        }
+      }
+    }
   }
 }
