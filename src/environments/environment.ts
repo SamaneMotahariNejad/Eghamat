@@ -3,7 +3,10 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  apiUrl: 'http://api.myrestapi.ir/api/',
+  UEID: '005d36a1-a210-407d-e60d-08d7a8a548c6'
+  // UEID: '0153b6ef-267a-4908-b9d0-08d7a94c1562'
 };
 
 /*

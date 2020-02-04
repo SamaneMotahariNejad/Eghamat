@@ -6,6 +6,7 @@ import { CollapseModule } from 'ngx-bootstrap/collapse';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { TabsModule } from 'ngx-bootstrap/tabs';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { FormComponent } from '../layout/form/form.component';
 
 @NgModule({
     imports: [
@@ -20,6 +21,7 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
     providers: [
     ],
     declarations: [
+        FormComponent
     ],
     exports: [
         CommonModule,
@@ -28,7 +30,8 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
         RouterModule,
         CollapseModule,
         ModalModule,
-        TabsModule
+        TabsModule,
+        FormComponent
     ],
     bootstrap: [
     ]

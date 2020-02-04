@@ -7,6 +7,7 @@ import { RouterModule } from '@angular/router';
 import { routes } from './routes/routes';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormService } from './core/services/form.service';
 @NgModule({
    declarations: [
       AppComponent
@@ -19,7 +20,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
       RouterModule.forRoot(routes, { enableTracing: false }),
       BrowserAnimationsModule
    ],
-   providers: [],
+   providers: [
+      FormService
+   ],
    bootstrap: [
       AppComponent
    ],
