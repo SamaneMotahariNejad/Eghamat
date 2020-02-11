@@ -1,0 +1,129 @@
+<div class="contactUs">
+  <div class="container">
+    <div class="border-0 card mt-4 p-5 shadow">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 relative" id="form">
+          <div class="form">
+            <form [formGroup]="myForm" novalidate (ngSubmit)="submitForm()"
+              *ngIf="!submitedValue">
+
+              <div class="form-group relative">
+                <label class="font-weight-bold fs-13 position-absolute
+                  text-third-color" for="name">نام و نام خانوادگی</label>
+                <input type="text" [(ngModel)]="formSubmit.subject"
+                  [ngClass]="{ 'is-invalid': submited && f.name.errors }"
+                  class="form-control" id="name" formControlName="name">
+                <div *ngIf="submited && f.name.errors" class="bg-danger
+                  invalid-feedback p-2 rounded text-center text-white">
+                  <div class="fs-12"
+                    *ngIf="f.name.errors.required">Name is required</div>
+                  <div class="fs-12" *ngIf="f.name.errors.minlength">Name must
+                    be
+                    at least 3
+                    characters</div>
+                  <div class="fs-12" *ngIf="f.name.errors.pattern">Name should
+                    only contain
+                    characters</div>
+                </div>
+              </div>
+
+              <div class="form-group relative">
+                <label class="font-weight-bold fs-13 position-absolute
+                  text-third-color" for="email">ایمیل</label>
+                <input type="email" [(ngModel)]="formSubmit.mailFrom"
+                  [ngClass]="{ 'is-invalid': submited && f.email.errors }"
+                  class="form-control ltr" id="email" formControlName="email">
+                <div *ngIf="submited && f.email.errors" class="bg-danger
+                  invalid-feedback p-2 rounded text-center text-white">
+                  <div class="fs-12" *ngIf="f.email.errors.required">email is
+                    required</div>
+                  <div class="fs-12" *ngIf="f.email.errors.pattern">Invalid
+                    email
+                    address</div>
+                </div>
+              </div>
+              <div class="form-group relative">
+                <label class="font-weight-bold fs-13 position-absolute
+                  text-third-color" for="comment">متن پیام</label>
+                <textarea [(ngModel)]="formSubmit.mailContent"
+                  class="form-control"
+                  [ngClass]="{ 'is-invalid': submited && f.messagebody.errors }"
+                  formControlName="messagebody" id="comment"></textarea>
+                <div *ngIf="submited && f.messagebody.errors" class="bg-danger
+                  invalid-feedback p-2 rounded text-center text-white">
+                  <div class="fs-12"
+                    *ngIf="f.messagebody.errors.required">Message is required</div>
+                  <div class="fs-12" *ngIf="f.messagebody.errors.minlength">Message
+                    must be at least 3
+                    characters</div>
+                </div>
+              </div>
+              <div class="form-group">
+                <button type="submit" class="bg-first-color btn font-weight-bolb
+                  font-weight-bold text-white w-100">ارسال</button>
+              </div>
+            </form>
+          </div>
+          <div id="disable-page">
+            <div class="box fa-3x">
+              <i class="fas fa-circle-notch fa-spin"></i>
+            </div>
+          </div>
+          <div class="alert text-center" *ngIf="submitedValue">
+            <span class="alert-content p-3 round-5 bg-success d-block
+              font-weight-bold text-center text-white w-75">
+              <i class="d-inline-block fa fa-check-circle fs-20 pl-2 relative
+                text-white"></i>
+              پیام شما با موفقیت ارسال شد ...
+            </span>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <div class="main-header">
+            <h3 class="font-weight-bold fs-15 pb-2 text-center text-third-color
+              w-50">
+              تماس با ما
+            </h3>
+          </div>
+          <p class="fs-13 lh2 mt-3 text-justify text-third-color">
+            برای کسب اطلاعات بیشتر مشاور رایگان ما در خدمت شماست می توانید از
+            طریق
+            ایمیل یا واتساپ در ساعات اداری با
+            ما در تماس باشید .
+          </p>
+          <div class="phone mt-4 text-right">
+            <div class="float-right mb-4 w-50">
+              <i class="fa fa-phone fs-17 text-first-color"></i>
+              <span class="d-inline-block pr-3 font-weight-bold fs-15 pb-3
+                text-first-color"> ایران - تهران </span>
+              <a class="d-block font-weight-bold text-third-color"
+                href="callto:00989122176608">
+                00989122176608
+              </a>
+            </div>
+
+            <div class="float-left mb-4 w-50 text-left">
+              <i class="fa fa-phone fs-17 text-first-color"></i>
+              <span class="d-inline-block pr-3 font-weight-bold fs-15 pb-3
+                text-first-color"> ترکیه - استانبول </span>
+              <a class="d-block font-weight-bold text-third-color"
+                href="callto:00905383105573">
+                00905383105573
+              </a>
+            </div>
+
+            <div class="mb-4 email">
+              <i class="fa fa-envelope fs-17 text-first-color"></i>
+              <span class="d-inline-block pr-3 font-weight-bold fs-15 pb-3
+                text-first-color"> ایمیل </span>
+              <a class="d-block font-weight-bold text-third-color"
+                href="mailto:00905383105573">
+                info@zukunftgmbh.de
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

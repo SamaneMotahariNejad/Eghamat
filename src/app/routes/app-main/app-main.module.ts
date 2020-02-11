@@ -30,6 +30,7 @@ import { EntrepreneurialResidencyComponent } from './pages/entrepreneurial-resid
 import { RegisteringCompanyComponent } from './pages/registering-company/registering-company.component';
 import { TrademarkRegistrationComponent } from './pages/trademark-registration/trademark-registration.component';
 import { TaxServicesComponent } from './pages/tax-services/tax-services.component';
+import { ImmigrationAdviceComponent } from './pages/immigration-advice/immigration-advice.component';
 
 
 const routes: Routes = [
@@ -57,6 +58,7 @@ const routes: Routes = [
   { path: 'TrademarkRegistration', component: TrademarkRegistrationComponent },
   { path: 'TaxServices', component: TaxServicesComponent },
   { path: 'contactUs', component: ContactUsComponent },
+  { path: 'ImmigrationAdvice', component: ImmigrationAdviceComponent },
 ];
 
 @NgModule({
@@ -92,7 +94,8 @@ const routes: Routes = [
     ContactUsComponent,
     RegisteringCompanyComponent,
     TrademarkRegistrationComponent,
-    TaxServicesComponent
+    TaxServicesComponent,
+    ImmigrationAdviceComponent
   ],
   exports: [
     RouterModule,
